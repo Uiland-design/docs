@@ -1,7 +1,7 @@
 ---
-title: 'Visibility'
-description: 'Show different content to humans and AI agents'
-icon: 'eye'
+title: "Visibility"
+description: "Show different content to humans and AI agents"
+icon: "eye"
 ---
 
 The `Visibility` component lets a single page serve two audiences: humans reading on the web and AI agents processing the Markdown output. Content marked `for="humans"` appears on the rendered page but is excluded from Markdown exports. Content marked `for="agents"` is hidden on the web but included in Markdown.
@@ -19,7 +19,7 @@ Mintlify serves every page at two URLs:
 
 ## Example
 
-```mdx
+```html
 <Visibility for="humans">
   <Steps>
     <Step title="Open the dashboard">
@@ -54,12 +54,15 @@ Human readers see the step-by-step UI walkthrough. AI agents processing the Mark
   <Card title="Onboarding flows" icon="person-walking-arrow-right">
     Show UI screenshots and button clicks to humans. Give agents the equivalent API calls.
   </Card>
+
   <Card title="Configuration guides" icon="sliders">
     Show a visual settings panel to humans. Give agents the equivalent JSON or CLI flags.
   </Card>
+
   <Card title="Error messages" icon="triangle-exclamation">
     Show a friendly explanation to humans. Give agents structured error codes and remediation steps.
   </Card>
+
   <Card title="Conceptual pages" icon="lightbulb">
     Include rich diagrams and narrative for humans. Provide a concise structured summary for agents.
   </Card>
